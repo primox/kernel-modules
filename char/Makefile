@@ -1,6 +1,6 @@
 obj-m += char.o
 
-KDIR = /usr/src/linux-headers-3.13.0-46-generic
+KDIR = /usr/src/linux-headers-$(shell uname -r)
 
 all:
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules

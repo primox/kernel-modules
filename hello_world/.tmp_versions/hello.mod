@@ -1,2 +1,2 @@
-/home/prix/Work/LDD/hello_world/hello.ko
-/home/prix/Work/LDD/hello_world/hello.o
+/home/prix/Work/kernel-modules/hello_world/hello.ko
+/home/prix/Work/kernel-modules/hello_world/hello.o
