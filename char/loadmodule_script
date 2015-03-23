@@ -1,0 +1,25 @@
+#!/bin/sh
+module="char"
+device="fakedevice"
+mode="664"
+
+# invoke insmod
+/sbin/insmod ./$module.ko $* || exit 1
+
+# remove stale device
+rm -f /dev/$device
+
+# get major number
+major=$(cat /proc/devices | grep $device | awk '{print $1}')
+
+# create device node
+mknod /dev/$device c $major 0
+
+# give permissions
+group="staff"
+grep -q '^staff:' /etc/group || group="wheel"
+
+chgrp $group /dev/$device
+chmod $mode /dev/$device
+
+
