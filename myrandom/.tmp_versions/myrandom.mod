@@ -1,2 +1,2 @@
-/home/prix/Work/kernel-modules/major_number/myrandom.ko
-/home/prix/Work/kernel-modules/major_number/myrandom.o
+/home/prix/Work/kernel-modules/myrandom/myrandom.ko
+/home/prix/Work/kernel-modules/myrandom/myrandom.o

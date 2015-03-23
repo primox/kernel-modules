@@ -18,7 +18,7 @@ static int __init module_param_init(void) {
 	printk(KERN_ALERT "\nPassing parameters: insmod module_param.ko param_char='\"Pozdravljen svet\"' param_int=5 ");
 	printk(KERN_ALERT "\nPassed string: %s Passed integer: %d", param_char, param_int);
 	
-	printk(KERN_ALERT "Current proces is \"%s\" (PID %i)\n", current->comm, current->pid);
+	//printk(KERN_ALERT "Current proces is \"%s\" (PID %i)\n", current->comm, current->pid);
 	return 0;
 }
 

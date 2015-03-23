@@ -1,25 +1,24 @@
-cmd_/home/prix/Work/kernel-modules/major_number/myrandom.o := gcc -Wp,-MD,/home/prix/Work/kernel-modules/major_number/.myrandom.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.8/include  -I./arch/x86/include -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -m64 -mno-mmx -mno-sse -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fno-delete-null-pointer-checks -O2 -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(myrandom)"  -D"KBUILD_MODNAME=KBUILD_STR(myrandom)" -c -o /home/prix/Work/kernel-modules/major_number/.tmp_myrandom.o /home/prix/Work/kernel-modules/major_number/myrandom.c
+cmd_/home/prix/Work/kernel-modules/myrandom/myrandom.o := gcc -Wp,-MD,/home/prix/Work/kernel-modules/myrandom/.myrandom.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/4.8/include  -I./arch/x86/include -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -m64 -mno-mmx -mno-sse -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fno-delete-null-pointer-checks -O2 -Wframe-larger-than=1024 -fstack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(myrandom)"  -D"KBUILD_MODNAME=KBUILD_STR(myrandom)" -c -o /home/prix/Work/kernel-modules/myrandom/.tmp_myrandom.o /home/prix/Work/kernel-modules/myrandom/myrandom.c
 
-source_/home/prix/Work/kernel-modules/major_number/myrandom.o := /home/prix/Work/kernel-modules/major_number/myrandom.c
+source_/home/prix/Work/kernel-modules/myrandom/myrandom.o := /home/prix/Work/kernel-modules/myrandom/myrandom.c
 
-deps_/home/prix/Work/kernel-modules/major_number/myrandom.o := \
-  include/linux/module.h \
-    $(wildcard include/config/sysfs.h) \
+deps_/home/prix/Work/kernel-modules/myrandom/myrandom.o := \
+  include/linux/init.h \
+    $(wildcard include/config/broken/rodata.h) \
+    $(wildcard include/config/lto.h) \
     $(wildcard include/config/modules.h) \
-    $(wildcard include/config/unused/symbols.h) \
-    $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/smp.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/debug/set/module/ronx.h) \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
+  include/linux/compiler.h \
+    $(wildcard include/config/sparse/rcu/pointer.h) \
+    $(wildcard include/config/trace/branch/profiling.h) \
+    $(wildcard include/config/profile/all/branches.h) \
+    $(wildcard include/config/enable/must/check.h) \
+    $(wildcard include/config/enable/warn/deprecated.h) \
+    $(wildcard include/config/kprobes.h) \
+  include/linux/compiler-gcc.h \
+    $(wildcard include/config/arch/supports/optimized/inlining.h) \
+    $(wildcard include/config/optimize/inlining.h) \
+  include/linux/compiler-gcc4.h \
+    $(wildcard include/config/arch/use/builtin/bswap.h) \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
     $(wildcard include/config/lbdaf.h) \
@@ -37,22 +36,26 @@ deps_/home/prix/Work/kernel-modules/major_number/myrandom.o := \
   include/uapi/linux/posix_types.h \
   include/linux/stddef.h \
   include/uapi/linux/stddef.h \
-  include/linux/compiler.h \
-    $(wildcard include/config/sparse/rcu/pointer.h) \
-    $(wildcard include/config/trace/branch/profiling.h) \
-    $(wildcard include/config/profile/all/branches.h) \
-    $(wildcard include/config/enable/must/check.h) \
-    $(wildcard include/config/enable/warn/deprecated.h) \
-    $(wildcard include/config/kprobes.h) \
-  include/linux/compiler-gcc.h \
-    $(wildcard include/config/arch/supports/optimized/inlining.h) \
-    $(wildcard include/config/optimize/inlining.h) \
-  include/linux/compiler-gcc4.h \
-    $(wildcard include/config/arch/use/builtin/bswap.h) \
   arch/x86/include/asm/posix_types.h \
     $(wildcard include/config/x86/32.h) \
   arch/x86/include/uapi/asm/posix_types_64.h \
   include/uapi/asm-generic/posix_types.h \
+  include/linux/module.h \
+    $(wildcard include/config/sysfs.h) \
+    $(wildcard include/config/unused/symbols.h) \
+    $(wildcard include/config/module/sig.h) \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/tracepoints.h) \
+    $(wildcard include/config/tracing.h) \
+    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/ftrace/mcount/record.h) \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/debug/set/module/ronx.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
   include/uapi/linux/const.h \
@@ -181,9 +184,6 @@ deps_/home/prix/Work/kernel-modules/major_number/myrandom.o := \
     $(wildcard include/config/early/printk.h) \
     $(wildcard include/config/printk.h) \
     $(wildcard include/config/dynamic/debug.h) \
-  include/linux/init.h \
-    $(wildcard include/config/broken/rodata.h) \
-    $(wildcard include/config/lto.h) \
   include/linux/kern_levels.h \
   include/linux/dynamic_debug.h \
   include/asm-generic/percpu.h \
@@ -638,6 +638,6 @@ deps_/home/prix/Work/kernel-modules/major_number/myrandom.o := \
     $(wildcard include/config/x86/smap.h) \
   arch/x86/include/asm/uaccess_64.h \
 
-/home/prix/Work/kernel-modules/major_number/myrandom.o: $(deps_/home/prix/Work/kernel-modules/major_number/myrandom.o)
+/home/prix/Work/kernel-modules/myrandom/myrandom.o: $(deps_/home/prix/Work/kernel-modules/myrandom/myrandom.o)
 
-$(deps_/home/prix/Work/kernel-modules/major_number/myrandom.o):
+$(deps_/home/prix/Work/kernel-modules/myrandom/myrandom.o):
